@@ -11,6 +11,8 @@
 * manage orders, change order status
 * Encrypt/Decrypt password
 * paging and filtering
+* DataAnnotation
+* manage product (CRUD Operation)
 * sort products by category
 * event handling (like popup notification) using AJAX/JQuery/Javascript
 
