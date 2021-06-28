@@ -18,3 +18,4 @@
 
 ## some screenshot 
 ![Screenshot1](https://i.ibb.co/p3Yybcw/anh1.png)
+![Screenshot1](https://i.ibb.co/BC52FyH/anh2.png)
