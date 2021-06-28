@@ -9,7 +9,7 @@
 * sign in, sign up new account
 * decentralization user/admin
 * manage orders, change order status
-* Encrypt/Decrypt password
+* encrypt/decrypt password
 * paging and filtering
 * DataAnnotation
 * manage product (CRUD Operation)
