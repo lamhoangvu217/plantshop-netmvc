@@ -1,0 +1,139 @@
+﻿@model ElectroShop.Models.MUser
+
+@{
+    ViewBag.Title = "Chỉnh sửa: " + Model.FullName;
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+@Html.Partial("_MessageAlert")
+@using (Html.BeginForm("Edit", "User", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-lg-9">
+            <h2>Quản trị viên</h2>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="~/admin">Dashboard</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a>User</a>
+                </li>
+                <li class="breadcrumb-item active">
+                    <strong>Edit</strong>
+                </li>
+            </ol>
+        </div>
+        <div class="col-lg-3">
+            <br />
+            <button class="btn btn-success " type="submit"><i class="fa fa-upload"></i>&nbsp;&nbsp;<span class="bold">Chấp nhận</span></button>
+            <a class="btn btn-danger " href="@Url.Action("Index","User")"><i class="fa fa-undo"></i>&nbsp;&nbsp;<span class="bold">Trở về</span></a>
+
+        </div>
+    </div>
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="ibox ">
+                    <div class="ibox-title">
+                        <p><i class="text-danger"><strong>* </strong>Các mục đánh dấu (*) là bắt buộc</i></p>
+
+                    </div>
+                    <div class="ibox-content">
+                        <form method="get">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                    @Html.HiddenFor(model => model.ID)
+                                    @Html.HiddenFor(model => model.Image)
+                                    @Html.HiddenFor(model => model.Created_at)
+                                    @Html.HiddenFor(model => model.Created_by)
+
+                                    <div class="form-group">
+                                        <label>Tên Quản trị viên</label>
+                                        @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Tên truy cập</label>
+                                        @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Địa chỉ</label>
+                                        @Html.EditorFor(model => model.Address, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.Address, "", new { @class = "text-danger" })
+
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Email</label>
+                                        @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+
+                                    </div>
+                                    <div class="form-group">
+                                        @Html.Label("Mật khẩu", htmlAttributes: new { @class = "control-label col-12" })
+                                        <div class="">
+                                            @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control", placeholder = "Mật khẩu", type = "password" } })
+                                            @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        @Html.Label("Nhập lại mật khẩu", htmlAttributes: new { @class = "control-label col-12" })
+                                        <div class="">
+                                            @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control", placeholder = "Mật khẩu", type = "password" } })
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Ảnh</label>
+                                        <img src="~/Public/library/user/@Model.Image" alt="@Model.Name" width="100" class="d-block mx-auto" />
+                                        <input type="file" name="Image" class="form-control" />
+
+                                        @Html.ValidationMessage("hinhanh", new { @class = "text-danger" })
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Trạng thái</label>
+                                        <select class="form-control" name="Status">
+                                            <option value="1">Hiện</option>
+                                            <option value="2">Ẩn</option>
+                                        </select>
+                                        @Html.ValidationMessageFor(model => model.Status, "", new { @class = "text-danger" })
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Số điện thoại</label>
+                                        @Html.EditorFor(model => model.Phone, new { htmlAttributes = new { @class = "text-danger" } })
+                                        @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "text-danger" })
+
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Quyền truy cập</label>
+                                        <select class="form-control" name="Access">
+                                            <option value="0">User</option>
+                                            <option value="1">Quản trị</option>
+                                            <option value="2">Kế toán</option>
+                                        </select>
+                                        @Html.ValidationMessageFor(model => model.Access, "", new { @class = "text-danger" })
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Giới tính</label>
+                                        <select class="form-control" name="Gender">
+                                            <option value="0">Nam</option>
+                                            <option value="1">Nữ</option>
+                                            <option value="2">Khác</option>
+                                        </select>
+                                        @Html.ValidationMessageFor(model => model.Gender, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+}

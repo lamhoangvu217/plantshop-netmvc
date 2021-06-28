@@ -1,0 +1,8 @@
+﻿@model IEnumerable<ElectroShop.Models.MSlider>
+<div id="mainSlider" class="nivoSlider">
+    @foreach (var item in Model)
+    {
+        <img src="~/Public/library/slider/@item.Img" alt="@item.Name" title="#htmlcaption" />
+    }
+
+</div>

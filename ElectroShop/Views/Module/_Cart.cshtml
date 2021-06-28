@@ -1,0 +1,73 @@
+﻿<script src="~/Public/js/target.min.js"></script>
+
+<header class="main-menu-area">
+    <div class="container">
+        <div class="row">
+            @if (Session["Cart"] != null)
+            {
+                <div class="col-lg-2 col-sm-12 col-xs-12 pull-right shopingcartarea">
+                    <div class="shopping-cart-out pull-right">
+                        <div class="shopping-cart">
+                            <a class="shop-link" href="gio-hang" title="Giỏ hàng">
+                                <i class="fa fa-shopping-cart cart-icon"></i>
+                                <b>Giỏ hàng</b>
+                                @foreach (var b in (List<ElectroShop.Library.ModelCart>)Session["Cart"])
+                                {
+                            <span class="ajax-cart-quantity">@b.Quantity</span>
+                                }
+                                            </a>
+                            @{double Tong = 0;}
+                            @foreach (var c in (List<ElectroShop.Library.ModelCart>)Session["Cart"])
+                            {
+                                Tong += (c.Price * c.Quantity);
+            <div class="shipping-cart-overly">
+                <div class="shipping-item">
+                    <a href="#"><span class="cross-icon"><i class="fa fa-times-circle"></i></span></a>
+                    <div class="shipping-item-image">
+                        <a href="~/@c.Slug"><img src="~/Public/library/product/@c.Image" width="80px" alt="@c.Name" /></a>
+                    </div>
+                    <div class="shipping-item-text">
+                        <span>@c.Quantity<span class="pro-quan-x">x</span> <a href="~/@c.Slug" class="pro-cat">@*@c.Name*@</a></span>
+                        <span class="pro-quality"><a href="~/@c.Slug">@c.Name</a></span>
+                        <p>Đơn giá: @c.Price.ToString("N0") ₫</p>
+                    </div>
+                </div>
+                <div class="shipping-total-bill">
+                    <div class="total-shipping-prices">
+                        <span class="shipping-total">@Tong.ToString("N0")₫</span>
+                        <span>Tổng</span>
+                    </div>
+                </div>
+                <div class="shipping-checkout-btn">
+                    <a href="thanh-toan" id="login_cart">Thanh toán<i class="fa fa-chevron-right"></i></a>
+                </div>
+            </div>}
+                        </div>
+
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="col-lg-2 col-sm-12 col-xs-12 pull-right shopingcartarea">
+                    <div class="shopping-cart-out pull-right">
+                        <div class="shopping-cart">
+                            <a class="shop-link" href="gio-hang" title="Giỏ hàng rỗng">
+                                <i class="fa fa-shopping-cart cart-icon"></i>
+                                <b>Giỏ hàng</b>
+                                <span class="ajax-cart-quantity slc">0</span>
+                            </a>
+                            
+                        </div>
+
+                    </div>
+                </div>
+            }
+            <!-- SHOPPING-CART END -->
+            @Html.Action("MainMenu", "Module")
+            <!-- MAINMENU END -->
+        </div>
+        @Html.Action("MainMenuMobile", "Module")
+
+    </div>
+</header>

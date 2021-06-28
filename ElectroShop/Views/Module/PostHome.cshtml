@@ -1,0 +1,20 @@
+﻿@model IEnumerable<ElectroShop.Models.MPost>
+
+@foreach (var item in Model)
+{
+    <div class="item">
+        <div class="latest-news-post">
+            <div class="single-latest-post">
+                <a href="#"><img src="~/Public/library/post/@item.Img" alt="@item.Title" height="120px;" /></a>
+                <h2><a href="~/@item.Slug">@item.Title</a></h2>
+                <p>@item.MetaDesc</p>
+                <div class="latest-post-info">
+                    <i class="fa fa-calendar"></i><span>@String.Format("{0:dd-MM-yyyy -  hh:mm:ss}", item.Updated_At)</span>
+                </div>
+                <div class="read-more">
+                    <a href="~/@item.Slug">Xem thêm <i class="fa fa-long-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+}

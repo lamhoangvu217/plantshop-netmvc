@@ -1,0 +1,66 @@
+﻿@{
+    ViewBag.Title = "Liên hệ";
+    Layout = "~/Views/Shared/_LayoutSite.cshtml";
+}
+@Html.Partial("_Nofit")
+<section class="main-content-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <!-- BSTORE-BREADCRUMB START -->
+                <div class="bstore-breadcrumb">
+                    <a href="~/">Trang chủ</a>
+                    <span><i class="fa fa-caret-right"></i></span>
+                    <span>Liên hệ</span>
+                </div>
+                <!-- BSTORE-BREADCRUMB END -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h2 class="page-title contant-page-title">Nếu có góp ý bạn hãy đóng góp ý kiến bên dưới cho Shop</h2>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <!-- CONTACT-US-FORM START -->
+                <div class="contact-us-form">
+                    <div class="contact-form-center">
+                        <h3 class="contact-subheading"></h3>
+                        <!-- CONTACT-FORM START -->
+                        <form class="contact-form" id="contactForm" method="POST" action="Site/SubmitContact">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+
+                                    <div class="form-group primary-form-group">
+                                        <label>Tên</label>
+                                        <input type="text" class="form-control input-feild" id="contactEmail" name="Fullname" value="">
+                                    </div>
+                                    <div class="form-group primary-form-group">
+                                        <label>Email</label>
+                                        <input type="email" class="form-control input-feild" id="contactEmail" name="Email" value="">
+                                    </div>
+                                    <div class="form-group primary-form-group">
+                                        <label>Số điện thoại</label>
+                                        <input type="text" class="form-control input-feild" id="contactEmail" name="Phone" value="">
+                                    </div>
+                                    <div class="form-group primary-form-group">
+                                        <label>Tiêu đề liên hệ</label>
+                                        <input type="text" class="form-control input-feild" id="contactEmail" name="Title" value="">
+                                    </div>
+                                    <button type="submit" name="submit" id="sendMessage" class="send-message main-btn">Send <i class="fa fa-chevron-right"></i></button>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+                                    <div class="type-of-text">
+                                        <div class="form-group primary-form-group">
+                                            <label>Nội dung liên hệ</label>
+                                            <textarea class="contact-text" name="Detail"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

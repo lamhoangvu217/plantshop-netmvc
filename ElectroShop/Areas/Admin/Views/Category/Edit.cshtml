@@ -1,0 +1,91 @@
+﻿@model ElectroShop.Models.MCategory
+
+@{
+    ViewBag.Title = "Chỉnh sửa danh mục";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+@Html.Partial("_MessageAlert")
+@using (Html.BeginForm("Edit", "Category", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-lg-9">
+            <h2>Danh mục sản phẩm</h2>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="~/admin">Dashboard</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a>Category</a>
+                </li>
+                <li class="breadcrumb-item active">
+                    <strong>Edit</strong>
+                </li>
+            </ol>
+        </div>
+        <div class="col-lg-3">
+            <br />
+            <button class="btn btn-success " type="submit"><i class="fa fa-upload"></i>&nbsp;&nbsp;<span class="bold">Chấp nhận</span></button>
+            <a class="btn btn-danger " href="@Url.Action("Index","Category")"><i class="fa fa-undo"></i>&nbsp;&nbsp;<span class="bold">Trở về</span></a>
+
+        </div>
+    </div>
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="ibox ">
+                    <div class="ibox-title">
+                        <p><i class="text-danger"><strong>* </strong>Các mục đánh dấu (*) là bắt buộc</i></p>
+
+                    </div>
+                    <div class="ibox-content">
+                        <form method="get">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                    <div class="form-group">
+                                        <label><strong class="input">Tên loại sản phẩm(<span class="text-danger">*</span>)</strong></label>
+                                        @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                                    </div>
+                                    <div class="form-group">
+                                        <label><strong class="input">Từ khóa SEO(<span class="text-danger">*</span>)</strong></label>
+                                        @Html.TextAreaFor(model => model.Metakey, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(model => model.Metakey, "", new { @class = "text-danger" })
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label><strong class="input">Mô tả(<span class="text-danger">*</span>)</strong></label>
+                                        @Html.TextAreaFor(model => model.Metadesc, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(model => model.Metadesc, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label><strong class="select">Chủ đề cha(<span class="text-danger">*</span>)</strong></label>
+                                        @Html.DropDownListFor(model => model.ParentId, (SelectList)ViewBag.ListCast, "[--None--]", new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(model => model.ParentId, "", new { @class = "text-danger" })
+
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label><strong class="select">Thứ tự(<span class="text-danger">*</span>)</strong></label>
+                                        @Html.DropDownListFor(model => model.Orders, (SelectList)ViewBag.ListOrder, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(model => model.Orders, "", new { @class = "text-danger" })
+
+                                    </div>
+                                    <div class="form-group">
+                                        <label><strong>Trạng thái (<span class="text-danger">*</span>)</strong></label>
+                                        @Html.DropDownListFor(model => model.Status, new[] { new SelectListItem { Text = "Xuất bản", Value = "1" }, new SelectListItem { Text = "Chưa xuất bản", Value = "2" } }, new { @class = "form-control" })
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+}

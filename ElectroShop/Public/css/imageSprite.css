@@ -1,0 +1,87 @@
+[class*="nicon-"]{width:17px;height:20px;display:inline-block;opacity: .4;margin-bottom:-3px;}
+.nicon-1{
+    background:url('../images/iconcatv2.png') 0 -1px;
+}
+.nicon-2{
+    background:url('../images/iconcatv2.png') -20px -8px;
+}
+.nicon-3{
+    background:url('../images/iconcatv2.png') -40px -8px;
+}
+.nicon-4{
+    background:url('../images/iconcatv2.png') -85px -8px;
+}
+.nicon-5{
+    background:url('../images/iconcatv2.png') -105px -8px;
+}
+.nicon-6{
+    background:url('../images/iconcatv2.png') -125px -8px;
+}
+.nicon-7{
+    background:url('../images/iconcatv2.png') -146px -8px;
+}
+.nicon-8{
+    background:url('../images/iconcatv2.png') -170px -8px;
+}
+.nicon-9{
+    background:url('../images/iconcatv2.png') -193px -8px;
+}
+.nicon-10{
+    background:url('../images/iconcatv2.png') -215px -8px;
+}
+.nicon-11{
+    background:url('../images/iconcatv2.png') -234px -8px;
+}
+.nicon-12{
+    background:url('../images/iconcatv2.png') -250px -8px;
+}
+.check-cat {
+    width: 17px;
+    height: 20px;
+    display: inline-block;
+    margin-bottom: -4px;
+    background: url('../images/iconIdN.png') 209px 0;
+}
+.ucheck-cat {
+    width: 17px;
+    height: 20px;
+    display: inline-block;
+    margin-bottom: -4px;
+    background: url('../images/iconIdN.png') 229px 0;
+}
+.ucheck-cat {
+    width: 17px;
+    height: 20px;
+    display: inline-block;
+    margin-bottom: -4px;
+    background: url('../images/iconIdN.png') 229px 0;
+}
+.list-icon {
+    width: 25px;
+    height: 20px;
+    display: inline-block;
+    margin-bottom: -4px;
+    background: url('../images/iconIdN.png') 119px 0px;
+}
+.grid-icon {
+    width: 25px;
+    height: 20px;
+    display: inline-block;
+    margin-bottom: -4px;
+    background: url('../images/iconIdN.png') 90px 0px;
+}
+.list-icon-active {
+    width: 25px;
+    height: 20px;
+    display: inline-block;
+    margin-bottom: -4px;
+    background: url('../images/iconIdN.png') 119px -28px;
+}
+
+.grid-icon-active {
+    width: 25px;
+    height: 20px;
+    display: inline-block;
+    margin-bottom: -4px;
+    background: url('../images/iconIdN.png') 90px -28px;
+}

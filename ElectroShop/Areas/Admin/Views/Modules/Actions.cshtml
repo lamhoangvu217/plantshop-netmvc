@@ -1,0 +1,54 @@
+﻿<li class="dropdown">
+    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+        <i class="fa fa-cart-plus"></i>  <span class="label label-warning">@ViewBag.CountOrderCancel</span>
+    </a>
+    <ul class="dropdown-menu dropdown-messages">
+        <li>
+            <div class="dropdown-messages-box">
+                <a class="dropdown-item float-left" href="#">
+                    <img alt="image" class="rounded-circle" src="~/Public/library/user/user.png" />
+                </a>
+                <div>
+
+                    <strong>Đơn hàng mới</strong> từ khách hàng. <br>
+
+                </div>
+            </div>
+        </li>
+        <li class="dropdown-divider"></li>
+        <li>
+            <div class="text-center link-block">
+                <a href="@Url.Action("Index","Order")" class="dropdown-item">
+                    <i class="fa fa-cart-plus"></i> <strong>Xem chi tiết</strong>
+                </a>
+            </div>
+        </li>
+    </ul>
+</li>
+<li class="dropdown">
+    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+        <i class="fa fa-id-card"></i>  <span class="label label-warning">@ViewBag.CountContactDoneReply</span>
+    </a>
+    <ul class="dropdown-menu dropdown-messages">
+        <li>
+            <div class="dropdown-messages-box">
+                <a class="dropdown-item float-left" href="#">
+                    <img alt="image" class="rounded-circle" src="~/Public/library/user/user.png" width="80px">
+                </a>
+                <div>
+
+                    <strong>Liên hệ mới</strong> từ khách hàng. <br>
+
+                </div>
+            </div>
+        </li>
+        <li class="dropdown-divider"></li>
+        <li>
+            <div class="text-center link-block">
+                <a href="@Url.Action("Index","Contact")" class="dropdown-item">
+                    <i class="fa fa-envelope"></i> <strong>Xem chi tiết</strong>
+                </a>
+            </div>
+        </li>
+    </ul>
+</li>

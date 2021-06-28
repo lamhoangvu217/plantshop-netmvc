@@ -1,0 +1,7 @@
+﻿@model IEnumerable<ElectroShop.Models.MPost>
+<ul>
+    @foreach (var row in Model)
+    {
+        <li><a href="~/@row.Slug"><i class="fa fa-angle-double-right"></i>@row.Title</a></li>
+    }
+</ul>

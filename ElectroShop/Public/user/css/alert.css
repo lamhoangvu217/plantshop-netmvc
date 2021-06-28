@@ -1,0 +1,20 @@
+﻿/** sweetalert*/
+.swal2-modal {
+	width: 20rem !important;
+}
+
+.swal2-title {
+	font-size: 14px !important;
+}
+
+.swal2-confirm {
+	height: 2rem;
+}
+
+.swal2-styled {
+	font-size: 12px !important;
+}
+
+.swal2-icon {
+	font-size: 9px !important;
+}

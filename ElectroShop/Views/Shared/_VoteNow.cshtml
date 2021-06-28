@@ -1,0 +1,56 @@
+﻿@model string
+@{
+    var url = Request.Url.AbsolutePath;
+}
+@if (!User.Identity.IsAuthenticated)
+{
+    <text>Please <a href="/Account/Login?ReturnUrl=@Request.Url.AbsolutePath" title="Login to rate">Login</a> to rate</text>
+    return;
+}
+@if (Request.Cookies[url] == null)
+{
+    <div id="ratingDiv" class="smallText">
+        Poor
+        <img src="~/Public/user/img/FilledStar.gif" alt="" class="ratingStar" data-value="1" /><img src="~/Public/user/img/FilledStar.gif" alt="" class="ratingStar" data-value="2" /><img src="/images/whitestar.gif" alt="" class="ratingStar" data-value="3" /><img src="/images/whitestar.gif" alt="" class="ratingStar" data-value="4" /><img src="/images/whitestar.gif" alt="" class="ratingStar" data-value="5" /> Excellent
+        <label id="lblResult"></label>
+    </div>
+    <style type="text/css">
+        .ratingStar {
+            cursor: pointer;
+        }
+    </style>
+    <script type="text/javascript">
+        var clickedFlag = false;
+        $(".ratingStar").mouseover(function () {
+            $(this).attr("src", "~/Public/user/img/FilledStar.gif").prevAll("img.ratingStar").attr("src", "~/Public/user/img/FilledStar.gif");
+        });
+        $(".ratingStar, #radingDiv").mouseout(function () {
+            $(this).attr("src", "~/Public/user/img/Star.gif");
+        });
+        $("#ratingDiv").mouseout(function () {
+            if (!clickedFlag)
+            {
+                $(".ratingStar").attr("src", "~/Public/user/img/FilledStar.gif");
+            }
+        });
+        $(".ratingStar").click(function () {
+            clickedFlag = true;
+            $(".ratingStar").unbind("mouseout mouseover click").css("cursor", "default");
+
+            var url = "/Site/SendRating?r=" + $(this).attr("data-value") + "&s=5&id=@Model&url=@url";
+            $.post(url, null, function (data) {
+                $("#lblResult").html(data);
+            });
+        });
+        $("#lblResult").ajaxStart(function () {
+            $("#lblResult").html("Processing ....");
+        });
+        $("#lblResult").ajaxError(function () {
+            $("#lblResult").html("<br />Error occured.");
+        });
+    </script>
+}
+else
+{
+    <text><span style="color:green;">Thanks for your vote !</span></text>
+}

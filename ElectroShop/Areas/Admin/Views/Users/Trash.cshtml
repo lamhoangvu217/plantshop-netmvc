@@ -1,0 +1,82 @@
+﻿@model IEnumerable<ElectroShop.Models.MUser>
+@{
+    ViewBag.Title = "Thùng rác";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+@Html.Partial("_MessageAlert")
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Khách hàng</h2>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="~/admin">Dashboard</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a>Users</a>
+            </li>
+            <li class="breadcrumb-item active">
+                <strong>Trash</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+        <br />
+        <a class="btn btn-success " href="@Url.Action("Index","Users")"><i class="fa fa-reply"></i>&nbsp;&nbsp;<span class="bold">Trở về</span></a>
+
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox ">
+
+                <div class="ibox-content">
+
+                    <table class="footable table table-stripped toggle-arrow-tiny">
+                        <thead>
+                            <tr>
+                                <th data-toggle="true">STT</th>
+                                <th>ID</th>
+                                <th>Họ và tên</th>
+                                <th data-hide="all">Email</th>
+                                <th>Phone</th>
+                                <th>Công cụ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @{var stt = 1;}
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@stt</td>
+                                    <td class="text-center">@Html.DisplayFor(modelItem => item.ID)</td>
+                                    <td><a href="#">@Html.DisplayFor(modelItem => item.FullName)</a> </td>
+                                    <td><a href="#">@Html.DisplayFor(modelItem => item.Email)</a>  </td>
+                                    <td><text>0</text>@Html.DisplayFor(modelItem => item.Phone)</td>
+                                    <td class="text-center">
+                                        <button type="button" class="btn btn-info btn-sm" data-toggle="tooltip" data-placement="top" title="Khôi phục">
+                                            <a href="@Url.Action("ReTrash", "Users", new { id = item.ID })" class="text-white"><i class="fa fa-refresh"></i></a>
+                                        </button>
+                                        <button type="button" class="btn btn-secondary btn-sm" data-toggle="tooltip" data-placement="top" title="Xóa vĩnh viễn">
+                                            <a href="@Url.Action("Delete", "Users", new { id = item.ID })" class="text-white"><i class="fa fa-trash"></i></a>
+                                        </button>
+                                    </td>
+                                </tr>
+                                stt++;
+                            }
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="5">
+                                    <ul class="pagination float-right"></ul>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

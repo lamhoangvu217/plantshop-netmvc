@@ -1,0 +1,9 @@
+﻿@model IEnumerable<ElectroShop.Models.MCategory>
+
+@foreach (var item in Model)
+{
+    <li class="">
+        <a href="~/@item.Slug">@item.Name</a>
+    </li>
+}
+

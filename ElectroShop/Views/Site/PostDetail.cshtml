@@ -1,0 +1,42 @@
+﻿@model ElectroShop.Models.MPost
+@{
+    ViewBag.Title = Model.Title;
+    Layout = "~/Views/Shared/_LayoutSite.cshtml";
+}
+<div class="container">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            @Html.Raw(Model.Detail)
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="left-title-area">
+                <h2 class="left-title">Bài viết cùng danh mục</h2>
+            </div>
+        </div>
+        <div class="related-product-area featured-products-area">
+            <div class="col-sm-12">
+                <div class=" row">
+                    <div class="related-product">
+                        @foreach (var item in ViewBag.listother)
+                        {
+                            <div class="item">
+                                <div class="single-product-item">
+                                    <div class="product-image">
+                                        <a href="~/@item.Slug"><img src="~/Public/library/post/@item.Img" alt="@item.Title" height="120px;" /></a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="@item.Slug">@item.Title</a>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,107 @@
+﻿@model IEnumerable<ElectroShop.Models.MCategory>
+@{
+    ViewBag.Title = "Thùng rác danh mục sản phẩm";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+@Html.Partial("_MessageAlert")
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-9">
+        <h2>Danh mục sản phẩm</h2>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="~/admin">Dashboard</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a>Category</a>
+            </li>
+            <li class="breadcrumb-item active">
+                <strong>Index</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-3">
+        <br />
+        <a class="btn btn-success " href="@Url.Action("Index","Category")"><i class="fa fa-reply"></i>&nbsp;&nbsp;<span class="bold">Trở về</span></a>
+
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox ">
+
+                <div class="ibox-content">
+
+                    <table class="footable table table-stripped toggle-arrow-tiny">
+                        <thead>
+                            <tr>
+                                <th data-toggle="true">STT</th>
+                                <th>Tên danh mục</th>
+                                <th>Cấp cha</th>
+                                <th data-hide="all">Ngày tạo</th>
+                                <th data-hide="all">Liên kết</th>
+                                <th>Công cụ</th>
+                                <th data-toggle="true">ID</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @{var stt = 1;}
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@stt</td>
+
+                                    <td>
+                                        <a href="@Url.Action("Details","Category", new {Id = item.Id })">@item.Name</a>
+                                    </td>
+                                    <td>
+                                        @if (item.ParentId == 0)
+                                        {
+
+                                            <span style="color:red;">[--Là cấp cha--]</span>
+                                        }
+                                        else
+                                        {
+                                            foreach (var il in ViewBag.GetAllCategory)
+                                            {
+                                                if (item.ParentId == il.ID)
+                                                {
+                                                    <span>@il.Name@*Cấp con*@</span>
+                                                }
+                                            }
+                                        }
+                                    </td>
+                                    <td>
+                                        @String.Format("{0:dd:MM:yyyy -  hh:mm:ss}", item.Updated_at)
+
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Slug)
+                                    </td>
+
+                                    <td>
+                                        <a href="@Url.Action("Undo","Category",new {id = item.Id })" class="btn btn-primary btn-sm" title="Khôi phục"><i class="fa fa-refresh"></i></a>
+                                        <a href="@Url.Action("Delete","Category",new {id = item.Id })" class="btn btn-danger btn-sm" title="Xóa"><i class="fa fa-trash"></i></a>
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Id)
+                                    </td>
+                                </tr>
+                                stt++;
+                            }
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="5">
+                                    <ul class="pagination float-right"></ul>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

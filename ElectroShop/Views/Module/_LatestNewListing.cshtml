@@ -1,0 +1,24 @@
+﻿@model IEnumerable<ElectroShop.Models.MPost>
+
+
+    <ul>
+        @foreach (var item in Model)
+        {
+            <li>
+                <div class="news-block">
+                    <div class="news-thumbnail">
+                        <img src="~/Public/library/post/@item.Img" alt="@item.Title" />
+                    </div>
+                    <div class="news-content">
+                        <a href="@item.Slug">
+                            <h3 class="news-title">@item.Title</h3>
+                        </a>
+                        <p class="news-paragraph">@item.MetaDesc</p>
+                    </div>
+                </div>
+            </li>
+        }
+
+
+    </ul>
+

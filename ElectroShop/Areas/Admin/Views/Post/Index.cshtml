@@ -1,0 +1,94 @@
+﻿@model IEnumerable<ElectroShop.PostTopic>
+
+@{
+    ViewBag.Title = "Bài viết";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+@Html.Partial("_MessageAlert")
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-9">
+        <h2>Bài viết</h2>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="~/admin">Dashboard</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a>Post</a>
+            </li>
+            <li class="breadcrumb-item active">
+                <strong>Index</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-3">
+        <br />
+        <a class="btn btn-success " href="@Url.Action("Create","Post")"><i class="fa fa-upload"></i>&nbsp;&nbsp;<span class="bold">Thêm mới</span></a>
+        <a class="btn btn-danger" href="@Url.Action("Trash","Post")"><i class="fa fa-trash"></i>&nbsp;&nbsp;<span class="bold">Thùng rác(@ViewBag.demrac)</span></a>
+
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox ">
+
+                <div class="ibox-content">
+
+                    <table class="footable table table-stripped toggle-arrow-tiny">
+                        <thead>
+                            <tr>
+
+                                <th data-toggle="true">ID</th>
+                                <th>Ảnh</th>
+                                <th>Tên bài viết</th>
+                                <th data-hide="all">Loại sản phẩm</th>
+                                <th data-hide="all">Ngày tạo</th>
+                                
+                                <th>Chức năng</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var row in Model)
+                            {
+                                <tr>
+                                    <td>@row.PostId</td>
+                                    <td><img src="~/Public/library/Post/@row.PostImg" width="80px;" /></td>
+                                    <td><a href="@Url.Action("Details","Post", new {Id = row.PostId })" />@row.PostName</td>
+                                    <td>@row.TopicName</td>
+                                    <!--None show hide-->
+                                    <td>@String.Format("{0:dd-MM-yyyy -  hh:mm:ss}", row.PostCreated_At)</td>
+
+                                    <td>
+                                       
+                                        <label class="switch">
+                                            @if (row.PostStatus == 1)
+                                            {<input class="changeStatus" data-id="@row.PostId" data-controller="Post" type="checkbox" checked>}
+                                            else
+                                            {<input class="changeStatus" data-id="@row.PostId" data-controller="Post" type="checkbox">}
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Chỉnh sửa">
+                                            <a href="@Url.Action("Edit", "Post", new { id = row.PostId })" class="text-white"><i class="fa fa-edit"></i></a>
+                                        </button>
+                                        <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Xóa">
+                                            <a href="@Url.Action("DelTrash", "Post", new { id = row.PostId })" class="text-white"><i class="fa fa-trash"></i></a>
+                                        </button>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="5">
+                                    <ul class="pagination float-right"></ul>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

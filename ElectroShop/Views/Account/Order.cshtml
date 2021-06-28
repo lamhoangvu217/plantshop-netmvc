@@ -1,0 +1,105 @@
+﻿
+@{
+    ViewBag.Title = "Order";
+    Layout = "~/Views/Shared/_LayoutSite.cshtml";
+}
+@Html.Partial("_Nofit")
+<section class="main-content-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <!-- BSTORE-BREADCRUMB START -->
+                <div class="bstore-breadcrumb">
+                    <a href="~/">Trang chủ</a>
+                    <span><i class="fa fa-caret-right"></i></span>
+                    <span>Chi tiết đơn hàng</span>
+                </div>
+                <!-- BSTORE-BREADCRUMB END -->
+            </div>
+        </div>
+        @foreach (var i in Model)
+        {
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="first_item primari-box">
+                        <!-- DELIVERY ADDRESS START -->
+                        <ul class="address">
+                            <li>
+                                <h3 class="page-subheading box-subheading">
+                                    Thông tin đơn hàng
+                                </h3>
+
+                            </li>
+
+                            <li> <small style="font-size:16px;">ID đơn hàng:</small>&nbsp; <a>@i.Id</a></li>
+                            <li>
+                                <small style="font-size:16px;">Trạng thái:</small>&nbsp; <a>
+                                    @{ if (i.Status == 1)
+                                        {
+                                            <span>Chờ xử lý</span> }
+                                        else if (i.Status == 2)
+                                        {
+                                            <span>Đang xử lý</span> }
+                                        else
+                                        {
+                                            <span>Hoàn thành</span> } }
+                                </a>
+                            </li>
+                            <li>
+                                <small style="font-size:16px;">
+                                    @{ double Total = 0;}
+                                    @foreach (var v in ViewBag.itemOrder)
+                                    {
+
+                                        if (i.Id == v.OrderId)
+                                        {
+                                            Total += v.Price * v.Quantity;
+                                            foreach (var p in ViewBag.productOrder)
+                                            {
+                                                if (p.ID == v.ProductId)
+                                                {
+                                                    <img src="~/Public/library/product/@p.Image" width="80px" />
+                                                    <small> &nbsp; <a href="~/@p.Slug">@p.Name</a></small>
+                                                    <small>x &nbsp;@v.Quantity</small>
+                                                }
+                                            }
+                                    <li><small style="font-size:16px;">Giá tiền &nbsp;@String.Format("{0:0,0₫}", v.Price)</small></li>
+                                }
+                            }
+                                    <li><small style="font-size:16px; color:red;" >Tổng số tiền &nbsp;@String.Format("{0:0,0₫}", @String.Format("{0:0,0₫}", Total))</small></li>
+                                    </li>
+
+                                </ul>
+                                <!-- DELIVERY ADDRESS END -->
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="second_item primari-box">
+                                <!-- BILLING ADDRESS START -->
+                                <ul class="address">
+                                    <li>
+                                        <h3 class="page-subheading box-subheading">
+                                            Thông tin khách hàng
+                                        </h3>
+                                    </li>
+                                    <li> <small>Tên: <a>@(ViewBag.Info.FullName)</a></small></li>
+                                    <br />
+                                    <li> <small>Số điện thoại: <a>@(ViewBag.Info.Phone)</a></small></li>
+                                    <br />
+                                    <li> <small>Email: <a>@(ViewBag.Info.Email)</a></small></li>
+                                    <br />
+                                    <li> <small>Địa chỉ: <a>@(ViewBag.Info.Address)</a></small></li>
+                                </ul>
+                                <!-- BILLING ADDRESS END -->
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="add-new-address">
+                                @*<a href="~/account/orderdetails/@i.Id" class="new-address-link">Chi tiết đơn hàng<i class="fa fa-chevron-right"></i></a>*@
+                            </div>
+                        </div>
+                    </div>
+                }
+    </div>
+
+</section>

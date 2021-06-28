@@ -1,0 +1,85 @@
+﻿@model IEnumerable<ElectroShop.PostTopic>
+
+@{
+    ViewBag.Title = "Thùng rác";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+@Html.Partial("_MessageAlert")
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Bài viết</h2>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="~/admin">Dashboard</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a>Post</a>
+            </li>
+            <li class="breadcrumb-item active">
+                <strong>Trash</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+        <br />
+        <a class="btn btn-success " href="@Url.Action("Index","Post")"><i class="fa fa-reply"></i>&nbsp;&nbsp;<span class="bold">Trở về</span></a>
+
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox ">
+
+                <div class="ibox-content">
+
+                    <table class="footable table table-stripped toggle-arrow-tiny">
+                        <thead>
+                            <tr>
+
+                                <th data-toggle="true">ID</th>
+                                <th>Ảnh</th>
+                                <th>Tên bài viết</th>
+                                <th data-hide="all">Loại sản phẩm</th>
+                                <th data-hide="all">Ngày tạo</th>
+
+                                <th>Chức năng</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var row in Model)
+                            {
+                                <tr>
+                                    <td>@row.PostId</td>
+                                    <td><img src="~/Public/library/Post/@row.PostImg" width="80px;" /></td>
+                                    <td><a href="@Url.Action("Details","Post", new {Id = row.PostId })" />@row.PostName</td>
+                                    <td>@row.TopicName</td>
+                                    <!--None show hide-->
+                                    <td>@String.Format("{0:dd-MM-yyyy -  hh:mm:ss}", row.PostCreated_At)</td>
+
+                                    <td>
+                                        <button type="button" class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="top" title="Chỉnh sửa">
+                                            <a href="@Url.Action("Undo", "Post", new { id = row.PostId })" class="text-white"><i class="fa fa-refresh"></i></a>
+                                        </button>
+                                        <button type="button" class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="top" title="Xóa">
+                                            <a href="@Url.Action("Delete", "Post", new { id = row.PostId })" class="text-white"><i class="fa fa-trash"></i></a>
+                                        </button>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="5">
+                                    <ul class="pagination float-right"></ul>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

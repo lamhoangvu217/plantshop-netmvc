@@ -1,0 +1,114 @@
+﻿@using PagedList.Mvc;
+@model PagedList.IPagedList<ElectroShop.Models.MProduct>
+@{
+    ViewBag.Title = "Tất cả sản phẩm";
+    Layout = "~/Views/Shared/_LayoutSite.cshtml";
+}
+<section class="main-content-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <!-- BSTORE-BREADCRUMB START -->
+                <div class="bstore-breadcrumb">
+                    <a href="~/">Trang chủ</a>
+                    <span><i class="fa fa-caret-right"></i></span>
+                    <span>Tất cả sản phẩm</span>
+                </div>
+                <!-- BSTORE-BREADCRUMB END -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <!-- PRODUCT-LEFT-SIDEBAR START -->
+                <div class="product-left-sidebar">
+                    <h2 class="left-title pro-g-page-title">Danh mục sản phẩm</h2>
+                    <!-- SINGLE SIDEBAR ENABLED FILTERS START -->
+                    <ul>
+                        @Html.Action("ListCate", "Module")
+                    </ul>
+                </div>
+                <!-- PRODUCT-LEFT-SIDEBAR END -->
+                <!-- SINGLE SIDEBAR TAG START -->
+                <div class="product-left-sidebar">
+                    <h2 class="left-title">Tags </h2>
+                    <div class="category-tag">
+                        <a href="#">Phụ kiện</a>
+                        <a href="#">Phụ kiện</a>
+                        <a href="#">Phụ kiện</a>
+                        <a href="#">Phụ kiện</a>
+                        <a href="#">Phụ kiện</a>
+                        <a href="#">Phụ kiện</a>
+                    </div>
+                </div>
+            </div>
+            <h1>Product</h1>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                <div class="all-gategory-product">
+                    <div class="row">
+
+                        <ul class="gategory-product">
+                            @foreach (var item in Model)
+                            {
+                                <li class="gategory-product-list col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="single-product-item">
+                                        <div class="product-image">
+                                            <a href="~/@item.Slug"><img src="~/Public/library/product/@item.Image" alt="@item.Name" /></a>
+                                            @if (item.Discount != 0)
+                                            {
+                                                <a href="#" class="new-mark-box">new</a> }
+                                            else
+                                            { @*<a href="#" class="new-mark-box">new</a>*@}
+                                            <div class="overlay-content">
+                                                <ul>
+                                                    <li><a href="#" title="Quick view"><i class="fa fa-search"></i></a></li>
+                                                    <li><a href="#" title="Quick view"><i class="fa fa-shopping-cart"></i></a></li>
+                                                    <li><a href="#" title="Quick view"><i class="fa fa-retweet"></i></a></li>
+                                                    <li><a href="#" title="Quick view"><i class="fa fa-heart-o"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="customar-comments-box">
+                                            
+                                                @*<div class="review-box">
+                                                        <span>1 Review(s)</span>
+                                                    </div>*@
+                                            </div>
+                                            <a href="~/@item.Slug">@item.Name</a>
+                                            <div class="price-box">
+                                                @if (@item.Discount == 1)
+                                                {
+                                                    <span class="price">@String.Format("{0:0,0₫}", @item.ProPrice)</span>
+                                                    <br />
+                                                    <span class="old-price">@String.Format("{0:0,0₫}", @item.Price)</span>
+
+
+                                                }
+                                                else
+                                                {
+                                                    <span class="price">@String.Format("{0:0,0₫}", @item.ProPrice)</span>
+                                                }
+                                                @*<span class="price">@String.Format("{0:0,0₫}", item.ProPrice)</span>
+                                                <del><span class="price" style="color:red">@String.Format("{0:0,0₫}", item.Price)</span></del>*@
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+}
+                        </ul>
+                    </div>
+                </div>
+                <div class="product-shooting-result product-shooting-result-border">
+
+                    @*<div class="showing-item">
+                        <span>Showing 1 - 12 of @ViewBag.Sl</span>
+                    </div>*@
+                    <div class="showing-next-prev">
+                        @Html.PagedListPager(Model, page => Url.Action("Product", new { page }))
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

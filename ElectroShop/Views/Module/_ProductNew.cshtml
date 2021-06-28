@@ -1,0 +1,59 @@
+﻿@model IEnumerable<ElectroShop.Models.MProduct>
+<div class="new-product-area">
+    <div class="left-title-area">
+        <h2 class="left-title">Sản phẩm khuyến mãi</h2>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="row">
+                <div class="product-block">
+                    <ul>
+                        @foreach (var item in Model)
+                        {
+                            if (@item.Discount != 0)
+                            {
+                                <li>
+                                    <div class='product'>
+                                        <div class='pic-news'>
+                                            <a href='~/@item.Slug'>
+                                                <img src="~/Public/library/product/@item.Image" alt="@item.Name" />
+                                            </a>
+                                        </div>
+                                        <h3>
+                                            <a href='~/@item.Slug'>@item.Name</a>
+                                        </h3>
+                                        <div class='price-box'>
+                                            @if (@item.Discount == 1)
+                                            {
+                                                <span class="price">@String.Format("{0:0,0₫}", @item.ProPrice)</span>
+                                                <br />
+                                                <span class="old-price">@String.Format("{0:0,0₫}", @item.Price)</span>
+
+
+                                            }
+                                            else
+                                            {
+                                                <span class="price">@String.Format("{0:0,0₫}", @item.ProPrice)</span>
+                                            }
+
+                                        </div>
+                                        <div class='cart-product'>
+
+                                            <a href='~/@item.Slug'><i class='fa fa-eye'></i></a>
+                                        </div>
+                                    </div>
+                                </li>
+                            }
+                            else
+                            {
+
+                            }
+
+                        }
+                    </ul>
+              
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

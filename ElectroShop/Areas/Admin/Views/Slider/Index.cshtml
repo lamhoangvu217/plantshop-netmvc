@@ -1,0 +1,84 @@
+﻿@model IEnumerable<ElectroShop.Models.MSlider>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+@Html.Partial("_MessageAlert")
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-9">
+        <h2>Slider</h2>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="~/admin">Dashboard</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a>Slider</a>
+            </li>
+            <li class="breadcrumb-item active">
+                <strong>Index</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-3">
+        <br />
+        <a class="btn btn-success " href="@Url.Action("Create","Slider")"><i class="fa fa-upload"></i>&nbsp;&nbsp;<span class="bold">Thêm mới</span></a>
+        <a class="btn btn-danger" href="@Url.Action("Trash","Slider")"><i class="fa fa-trash"></i>&nbsp;&nbsp;<span class="bold">Thùng rác(@ViewBag.count_trash)</span></a>
+
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox ">
+
+                <div class="ibox-content">
+
+                    <table class="footable table table-stripped toggle-arrow-tiny">
+                        <thead>
+                            <tr>
+                                <th style="width:120px ">Ảnh</th>
+                                <th>Tên Slider</th>
+                                <th>Chức năng</th>
+                                <th data-toggle="true">ID</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var row in Model)
+                            {
+                            <tr>
+                                <th><img src="~/Public/library/slider/@row.Img" class="img-fluid" /></th>
+                                <td><a href="@Url.Action("Details","Slider", new {Id = row.Id })">@row.Name</a></td>
+
+                                <td>
+                                    <label class="switch">
+                                        @if (row.Status == 1)
+                                        {<input class="changeStatus" data-id="@row.Id" data-controller="Slider" type="checkbox" checked>}
+                                        else
+                                        {<input class="changeStatus" data-id="@row.Id" data-controller="Slider" type="checkbox">}
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <a href="@Url.Action("Edit","Slider",new {id = row.Id })" class="btn btn-primary btn-sm" title="Sửa"><i class="fa fa-edit"></i></a>
+                                    <a href="@Url.Action("delTrash","Slider",new {id = row.Id })" class="btn btn-danger btn-sm" title="Xóa"><i class="fa fa-trash"></i></a>
+                                </td>
+
+                                <td>@row.Id</td>
+
+                            </tr>
+                            }
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="5">
+                                    <ul class="pagination float-right"></ul>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

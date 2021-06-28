@@ -1,0 +1,26 @@
+﻿@model IEnumerable<ElectroShop.Models.MProduct>
+@foreach (var item in Model)
+{   
+    <div class="item">
+        <h1>Product Home</h1>  
+        <div class="single-product-item">
+            <div class="product-image">
+                <a href="~/@item.Slug"><img src="~/Public/library/product/@item.Image" alt="@item.Name" /></a>
+                <a href="#" class="new-mark-box">new</a>
+            </div>
+            <div class="product-info">
+                <div class="customar-comments-box">
+                  
+                    @*<div class="review-box">
+                            <span>1 Review(s)</span>
+                        </div>*@
+                </div>
+                <a href="~/@item.Slug">@item.Name</a>
+                <div class="price-box">
+                    <span class="price">@String.Format("{0:0,0₫}", @item.ProPrice)</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+}

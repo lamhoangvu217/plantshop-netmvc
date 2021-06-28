@@ -1,0 +1,77 @@
+﻿@model IEnumerable<ElectroShop.Models.MSlider>
+@{
+    ViewBag.Title = "Trash";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+@Html.Partial("_MessageAlert")
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Slider</h2>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="~/admin">Dashboard</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a>Slider</a>
+            </li>
+            <li class="breadcrumb-item active">
+                <strong>Trash</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+        <br />
+
+        <a class="btn btn-info " href="@Url.Action("Index","Slider")"><i class="fa fa-mail-reply"></i>&nbsp;&nbsp;<span class="bold">Quay về</span></a>
+
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox ">
+
+                <div class="ibox-content">
+
+                    <table class="footable table table-stripped toggle-arrow-tiny">
+                        <thead>
+                            <tr>
+                                <th style="width:120px ">ẢNH</th>
+                                <th>Tên Slider</th>
+                                <th>Chức năng</th>
+                                <th data-toggle="true">ID</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var row in Model)
+                            {
+                                <tr>
+                                    <th><img src="~/Public/library/slider/@row.Img" class="img-fluid" /></th>
+                                    <td><a href="@Url.Action("Details","Slider", new {Id = row.Id })">@row.Name</a></td>
+
+                                    <td>
+
+                                        <a href="@Url.Action("Undo","Slider",new {id = row.Id })" class="btn btn-primary btn-sm" title="Khôi phục"><i class="fa fa-refresh"></i></a>
+                                        <a href="@Url.Action("Delete","Slider",new {id = row.Id })" class="btn btn-danger btn-sm" title="Xóa"><i class="fa fa-trash"></i></a>
+                                    </td>
+
+                                    <td>@row.Id</td>
+
+                                </tr>
+                            }
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="5">
+                                    <ul class="pagination float-right"></ul>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,12 @@
+﻿@model IEnumerable<ElectroShop.Models.MTopic>
+
+@foreach (var row in Model)
+{
+    <li>
+        <a href="~/@row.Slug">@row.Name<span></span></a>
+    </li>
+    <br />
+}
+<li>
+    <a href="~/tin-tuc">Tất cả bài viết<span></span></a>
+</li>

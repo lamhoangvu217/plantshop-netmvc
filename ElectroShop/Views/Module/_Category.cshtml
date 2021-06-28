@@ -1,0 +1,28 @@
+﻿@model IEnumerable<ElectroShop.Models.MCategory>
+
+@foreach (var item in Model)
+{
+    <ul>
+        <li>
+            <a href="~/@item.Slug"><span class="cat-thumb hidden-md hidden-sm hidden-xs"></span>@item.Name<i class="fa fa-angle-right"></i></a>
+            @*<div class="cat-left-drop-menu">
+                <div class="cat-left-drop-menu-left">
+                    <a class="menu-item-heading" href="shop-gird.html">Tops</a>
+                    <ul>
+                        <li><a href="shop-gird.html">Blouse</a></li>
+                        <li><a href="shop-gird.html">T-shirts</a></li>
+                    </ul>
+                </div>
+                <div class="cat-left-drop-menu-left">
+                    <a class="menu-item-heading" href="shop-gird.html">Dresses</a>
+                    <ul>
+                        <li><a href="shop-gird.html">Summer Dresses</a></li>
+                        <li><a href="shop-gird.html">Casual Dresses</a></li>
+                        <li><a href="shop-gird.html">Enening Dresses</a></li>
+                    </ul>
+                </div>
+            </div>*@
+        </li>
+
+    </ul>
+}    

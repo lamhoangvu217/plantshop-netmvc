@@ -1,0 +1,56 @@
+﻿@model IEnumerable<ElectroShop.Models.MTopic>
+@{
+    ViewBag.Title = "Posts";
+    Layout = "~/Views/Shared/_LayoutSite.cshtml";
+}
+@Html.Action("Navbar", "Module")
+@Html.Action("LatestNew", "Module")
+@*<section class="main-content-section-full-column">
+    @foreach (var top in Model)
+    {
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="featured-products-area">
+                        <div class="left-title-area">
+                            <h2 class="left-title">@top.Name</h2>
+                        </div>
+                        <div class="row">
+                            <div class="feartured-carousel">
+                                @Html.Action("PostHome", "Module", new { topid = top.Id })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</section>*@
+<style>
+    h2.center-title {
+        text-align: left;
+        position: unset;
+        margin-left: 0px;
+    }
+</style>
+<section class="latest-news-area">
+    @foreach (var top in Model)
+    {
+        <div class="container">
+            <div class="row">
+                <div class="latest-news-row">
+                    <div class="center-title-area">
+                        <h2 class="center-title"><a href="~/@top.Slug">@top.Name</a></h2>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="row">
+                            <div class="latest-news-carousel">
+                                @Html.Action("PostHome", "Module", new { topid = top.Id })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    </section>

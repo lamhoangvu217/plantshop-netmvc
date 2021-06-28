@@ -1,0 +1,5 @@
+﻿@if (Notification.has_flash())
+{
+    ModelNotification Notifi = Notification.get_flash();
+<input type="hidden" value="@Notifi.mgs_type" name="u_mgs_type" />
+                <input type="hidden" value=" @Notifi.mgs" name="u_mgs" />}

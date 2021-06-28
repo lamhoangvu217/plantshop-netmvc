@@ -1,0 +1,74 @@
+﻿@model IEnumerable<ElectroShop.Models.MMenu>
+@{
+    ViewBag.Title = "Trash";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+@Html.Partial("_MessageAlert")
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Menu</h2>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="~/admin">Dashboard</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a>Menu</a>
+            </li>
+            <li class="breadcrumb-item active">
+                <strong>Trash</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+        <br />
+        <a class="btn btn-success" href="@Url.Action("Index","Menu")"><i class="fa fa-reply"></i>&nbsp;&nbsp;<span class="bold">Trở về</span></a>
+
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-md-12">
+            <table class="footable table table-stripped toggle-arrow-tiny">
+                <thead>
+                    <tr>
+                        <th data-toggle="true">ID</th>
+                        <th>Tên Menu</th>
+                        <th data-hide="all">Cấp cha</th>
+                        <th data-hide="all">Ngày tạo</th>
+                        <th data-hide="all">Link</th>
+                        <th>Công cụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (var row in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => row.Id)
+                            </td>
+                            <td>
+                                <a href="@Url.Action("Details","Category", new {Id = row.Id })">@row.Name</a>
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => row.ParentId)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => row.Updated_at)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => row.Link)
+                            </td>
+                            <td>
+                                <a href="@Url.Action("ReTrash","Menu",new {id = row.Id })" class="btn btn-primary btn-sm" title="Khôi phục"><i class="fa fa-refresh"></i></a>
+                                <a href="@Url.Action("Delete","Menu",new {id = row.Id })" class="btn btn-danger btn-sm" title="Xóa"><i class="fa fa-trash"></i></a>
+                            </td>
+
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>

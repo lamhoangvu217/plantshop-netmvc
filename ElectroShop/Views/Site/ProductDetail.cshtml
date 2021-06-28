@@ -1,0 +1,199 @@
+﻿@model ElectroShop.Models.MProduct
+@{
+    ViewBag.Title = @Model.Name;
+    Layout = "~/Views/Shared/_LayoutSite.cshtml";
+}
+@Html.Partial("_Nofit")
+<section class="main-content-section">
+    <div class="container">
+        <div class="row">
+            <h1>Product Detail</h1>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="bstore-breadcrumb">
+                    <a href="~/">Trang Chủ<span><i class="fa fa-caret-right"></i> </span> </a>
+                    <span> @Model.Name</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 col-sm-4 col-xs-12">
+                        <div class="single-product-view">
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="thumbnail_1">
+                                    <div class="single-product-image">
+                                        <img src="~/Public/library/product/@Model.Image" alt="@Model.Name" />
+                                        <a class="new-mark-box" href="#">new</a>
+                                        <a class="fancybox" href="~/Public/library/product/@Model.Image" data-fancybox-group="gallery"><span class="btn large-btn">View larger <i class="fa fa-search-plus"></i></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-7 col-sm-8 col-xs-12">
+                        <div class="single-product-descirption">
+                            <h2>@Model.Name</h2>
+
+                            <div class="single-product-review-box">
+                             
+                                <div class="read-reviews">
+
+                                </div>
+                                <div class="write-review">
+
+                                </div>
+                            </div>
+                            <div class="single-product-condition">
+                                <p>Sản phẩm có sẵn: <span>@Model.Quantity</span></p>
+                                <p>Condition: <span>New product</span></p>
+                            </div>
+                            <div class="single-product-price">
+                                @if (Model.Discount == 1)
+                                {
+                                    <h2>@String.Format("{0:0,0₫}", Model.ProPrice)</h2>
+                                    <br />
+                                    <h2><del>@String.Format("{0:0,0₫}", Model.Price)</del></h2>
+
+                                }
+                                else
+                                {
+                                    <h2>@String.Format("{0:0,0₫}", Model.Price)</h2>
+                                }
+
+
+                            </div>
+                            <div class="single-product-desc">
+                                <p>@Html.Raw(Model.Detail)</p>
+                                @*<div class="product-in-stock">
+                                        <p>300 Items<span>In stock</span></p>
+                                    </div>*@
+                            </div>
+
+                            <div class="single-product-quantity">
+                                <p class="small-title">Số lượng</p>
+                                <div class="cart-quantity">
+                                    <div class="cart">
+                                        
+                                        <input class="cart-plus-minus sing-pro-qty" type="number" id="qtyDpt" name="" value="1" min="1">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-product-add-cart">
+                                <button class="add-cart-text" id="buy-btn" data-id="@Model.ID" title="Thêm vào giỏ hàng" href="#">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="product-more-info-tab">
+                            <ul class="nav nav-tabs more-info-tab">
+                                <li class="active"><a href="#moreinfo" data-toggle="tab">Chi tiết</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="moreinfo">
+                                    <div class="tab-description">
+                                        <p>@Html.Raw(Model.Description)</p>
+                                    </div>
+                                </div>
+                                @*<div class="sharethis-sticky-share-buttons"></div>*@
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @*<div class="row">
+                    <div class="col-sm-12">
+                        <div class="rating">
+                            <div class="tr" style="background-color:#f1f1f1;">
+                                <div class="td0">Please rate this school</div>
+                                <div class="td">@Html.Partial("_VoteNow", Model.ID.ToString())</div>
+                                <div class="td">@Html.Partial("_VoteShow", Model.Votes)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>*@
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="left-title-area">
+                            <h2 class="left-title">Sản phẩm cùng danh mục</h2>
+                        </div>
+                    </div>
+                    <div class="related-product-area featured-products-area">
+                        <div class="col-sm-12">
+                            <div class=" row">
+                                <div class="related-product">
+                                    @foreach (var item in ViewBag.listother)
+                                    {
+                                        <div class="item">
+                                            <div class="single-product-item">
+                                                <div class="product-image">
+                                                    <a href="~/@item.Slug"><img src="~/Public/library/product/@item.Image" alt="@item.Name" /></a>
+                                                </div>
+                                                <div class="product-info">
+                                                    <div class="customar-comments-box">
+                                                    
+                                                        @*<div class="review-box">
+                                                                <span>1 Review(s)</span>
+                                                            </div>*@
+                                                    </div>
+                                                    <a href="@item.Slug">@item.Name</a>
+                                                    <div class="price-box">
+                                                        <span class="price">@String.Format("{0:0,0₫}", item.ProPrice)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <div class="single-product-right-sidebar">
+                    <h2 class="left-title">Sản phẩm vừa nhập về</h2>
+                    <ul>
+                        @foreach (var item in ViewBag.news)
+                        {
+                            <li>
+                                <a href="#"><img src="~/Public/library/product/@item.Image" width="80px;" alt="@item.Name" /></a>
+                                <div class="r-sidebar-pro-content">
+                                    <h5><a href="~/@item.Slug">@item.Name</a></h5>
+                                  
+                                    <h2 style="color:red;">@String.Format("{0:0,0₫}", item.ProPrice)</h2>
+                                    <h3><del>@String.Format("{0:0,0₫}", item.Price)</del></h3>
+                                    <p>@item.MetaDesc</p>
+                                </div>
+                            </li>
+                        }
+
+                    </ul>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    let valueProduct = $('.qtyDpt').val();
+    console.log(valueProduct);
+
+    function Cong() {
+
+        const num = parseInt();
+        console.log(num)
+        if (num < 99) {
+            $('.qtyDpt').val(num + 1);
+        }
+    }
+    function Tru() {
+        const num = parseInt($('.qtyDpt').val());
+        if (num > 1) {
+            $('.qtyDpt').val(num - 1);
+        }
+    }
+</script>

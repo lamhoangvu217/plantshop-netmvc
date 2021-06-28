@@ -1,0 +1,38 @@
+﻿@model string
+@{
+    Single m_Average = 0;
+
+    Single m_totalNumberOfVotes = 0;
+    Single m_totalVoteCount = 0;
+    Single m_currentVotesCount = 0;
+    Single m_inPercent = 0;
+    var thisVote = string.Empty;
+
+    if (Model.Length > 0)
+    {
+        string[] votes = Model.Split(',');
+        for (int i = 0; i < votes.Length; i++)
+        {
+            m_currentVotesCount = int.Parse(votes[i]);
+            m_totalNumberOfVotes = m_totalNumberOfVotes + m_currentVotesCount;
+            m_totalVoteCount = m_totalVoteCount + (m_currentVotesCount * (i + 1));
+        }
+
+        m_Average = m_totalVoteCount / m_totalNumberOfVotes;
+        m_inPercent = (m_Average * 100) / 5;
+
+        thisVote = "<span style=\"display: block; width: 65px; height: 13px; background: url(/images/starRating.png) 0 0;\">" +
+            "<span style=\"display: block; width: " + m_inPercent + "%; height: 13px; background: url(/images/starRating.png) 0 -13px;\"></span> " +
+            "</span>" +
+            "<span class=\"smallText\">Overall ratings: <span itemprop=\"ratingCount\">" + m_totalNumberOfVotes + "</span> | Rating: <span itemprop=\"ratingValue\">" + m_Average.ToString("##.##") + "</span> out of 5 </span>  ";
+    }
+    // calculate total votes now
+
+
+}
+<div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+    <meta itemprop="bestRating" content="5" />
+    <meta itemprop="worstRating" content="1">
+    <meta itemprop="ratingValue" content="@m_Average.ToString("##.##") %>" />
+    @Html.Raw(thisVote)
+</div>

@@ -1,0 +1,149 @@
+﻿@model ElectroShop.Models.MUser
+
+@{
+    ViewBag.Title = Model.Name;
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+@Html.Partial("_MessageAlert")
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-9">
+        <h2>Khách hàng</h2>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="~/admin">Dashboard</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a>Users</a>
+            </li>
+            <li class="breadcrumb-item active">
+                <strong>Detail</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-3">
+        <br />
+        <a class="btn btn-success " href="@Url.Action("Index","Users")"><i class="fa fa-mail-reply"></i>&nbsp;&nbsp;<span class="bold">Quay về</span></a>
+        <a class="btn btn-danger" href="@Url.Action("Trash","Users")"><i class="fa fa-trash"></i>&nbsp;&nbsp;<span class="bold">Thùng rác</span></a>
+
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox ">
+                <div class="ibox-title">
+                    <h5 style="color:red;">@Model.Name</h5>
+                </div>
+                <div class="ibox-content">
+                    <dl class="dl-horizontal">
+                        <dt>
+                            @Html.DisplayNameFor(model => model.FullName)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.FullName)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Name)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Name)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Password)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Password)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Email)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Email)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Gender)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Gender)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Phone)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Phone)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Image)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Image)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Access)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Access)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Created_at)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Created_at)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Created_by)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Created_by)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Updated_at)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Updated_at)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Updated_by)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Updated_by)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Status)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Status)
+                        </dd>
+
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

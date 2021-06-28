@@ -1,0 +1,76 @@
+﻿@model ElectroShop.Models.MMenu
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+@Html.Partial("_MessageAlert")
+
+    <div class="row wrapper border-bottom white-bg Menu-heading">
+        <div class="col-lg-9">
+            <h2>Menu</h2>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="~/admin">Dashboard</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a>Menu</a>
+                </li>
+                <li class="breadcrumb-item active">
+                    <strong>Delete</strong>
+                </li>
+            </ol>
+        </div>
+        <div class="col-lg-3">
+            <br />
+
+            <a class="btn btn-success " href="@Url.Action("Index", "Menu")"><i class="fa fa-mail-reply"></i>&nbsp;&nbsp;<span class="bold">Quay về</span></a>
+
+            <a class="btn btn-info " href="@Url.Action("Details","Menu", new {Id = Model.Id })"><i class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Chi tiết</span></a>
+        </div>
+    </div>
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="ibox ">
+                    <div class="ibox-title">
+                        <h5 style="color:red;">@Model.Name</h5>
+                    </div>
+                    <div class="ibox-content">
+
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                        <table class="table table-bordered table-hover">
+
+                            <tr>
+                                <th scope="col"> @Html.DisplayNameFor(model => model.Id)</th>
+                                <td scope="col">  @Html.DisplayFor(model => model.Id)</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="col"> @Html.DisplayNameFor(model => model.Created_at)</th>
+                                <td scope="col">  @Html.DisplayFor(model => model.Created_at)</td>
+                            </tr>
+                            <tr>
+                                <th scope="col"> @Html.DisplayNameFor(model => model.Created_by)</th>
+                                <td scope="col">  @Html.DisplayFor(model => model.Created_by)</td>
+                            </tr>
+                            <tr>
+                                <th scope="col"> @Html.DisplayNameFor(model => model.Updated_at)</th>
+                                <td scope="col">  @Html.DisplayFor(model => model.Updated_at)</td>
+                            </tr>
+                            <tr>
+                                <th scope="col"> @Html.DisplayNameFor(model => model.Updated_by)</th>
+                                <td scope="col">  @Html.DisplayFor(model => model.Updated_by)</td>
+                            </tr>
+
+
+                        </table>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>

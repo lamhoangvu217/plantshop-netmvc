@@ -1,0 +1,37 @@
+﻿.button_login {
+	margin-top: -9px;
+	background: #4a90e2;
+	border: 0;
+	color: #fff;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+	.button_login:focus {
+		outline: 0;
+	}
+
+.button_dangky {
+	display: block;
+	background: #4a90e2;
+	border: 0;
+	color: #d0efff;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+	.button_dangky a {
+		color: #d0efff;
+	}
+
+		.button_dangky a:hover {
+			text-decoration: none;
+		}
+
+	.button_dangky:focus {
+		outline: 0;
+	}
+
+.nut-vang:focus {
+	outline: 0;
+}

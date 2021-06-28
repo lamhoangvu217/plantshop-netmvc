@@ -1,0 +1,339 @@
+D:\Sharecode\Computer\ElectroShop\bin\ElectroShop.dll.config
+D:\Sharecode\Computer\ElectroShop\bin\ElectroShop.dll
+D:\Sharecode\Computer\ElectroShop\bin\ElectroShop.pdb
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\csc.exe
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\csc.exe.config
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\csc.rsp
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\csi.exe
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\csi.exe.config
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\csi.rsp
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\System.AppContext.dll
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\System.Collections.Immutable.dll
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\System.Console.dll
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\System.Globalization.Calendars.dll
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\System.IO.Compression.dll
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\System.IO.FileSystem.dll
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\System.Net.Http.dll
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\System.Net.Sockets.dll
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\System.Reflection.Metadata.dll
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\System.ValueTuple.dll
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\System.Xml.XPath.dll
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\vbc.exe
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\vbc.exe.config
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\vbc.rsp
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\VBCSCompiler.exe
+D:\Sharecode\Computer\ElectroShop\bin\roslyn\VBCSCompiler.exe.config
+D:\Sharecode\Computer\ElectroShop\bin\EntityFramework.dll
+D:\Sharecode\Computer\ElectroShop\bin\EntityFramework.SqlServer.dll
+D:\Sharecode\Computer\ElectroShop\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Sharecode\Computer\ElectroShop\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Sharecode\Computer\ElectroShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Sharecode\Computer\ElectroShop\bin\Microsoft.Web.Infrastructure.dll
+D:\Sharecode\Computer\ElectroShop\bin\PagedList.dll
+D:\Sharecode\Computer\ElectroShop\bin\PagedList.Mvc.dll
+D:\Sharecode\Computer\ElectroShop\bin\System.Web.Helpers.dll
+D:\Sharecode\Computer\ElectroShop\bin\System.Web.Mvc.dll
+D:\Sharecode\Computer\ElectroShop\bin\System.Web.Razor.dll
+D:\Sharecode\Computer\ElectroShop\bin\System.Web.Webpages.Deployment.dll
+D:\Sharecode\Computer\ElectroShop\bin\System.Web.Webpages.dll
+D:\Sharecode\Computer\ElectroShop\bin\System.Web.Webpages.Razor.dll
+D:\Sharecode\Computer\ElectroShop\bin\EntityFramework.xml
+D:\Sharecode\Computer\ElectroShop\bin\EntityFramework.SqlServer.xml
+D:\Sharecode\Computer\ElectroShop\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Sharecode\Computer\ElectroShop\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Sharecode\Computer\ElectroShop\bin\PagedList.xml
+D:\Sharecode\Computer\ElectroShop\bin\PagedList.Mvc.xml
+D:\Sharecode\Computer\ElectroShop\bin\System.Web.Razor.xml
+D:\Sharecode\Computer\ElectroShop\bin\System.Web.Webpages.xml
+D:\Sharecode\Computer\ElectroShop\bin\System.Web.Webpages.Deployment.xml
+D:\Sharecode\Computer\ElectroShop\bin\System.Web.Webpages.Razor.xml
+D:\Sharecode\Computer\ElectroShop\bin\System.Web.Helpers.xml
+D:\Sharecode\Computer\ElectroShop\bin\System.Web.Mvc.xml
+D:\Sharecode\Computer\ElectroShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Sharecode\Computer\ElectroShop\obj\Debug\ElectroShop.csproj.CoreCompileInputs.cache
+D:\Sharecode\Computer\ElectroShop\obj\Debug\ElectroShop.csproj.CopyComplete
+D:\Sharecode\Computer\ElectroShop\obj\Debug\ElectroShop.dll
+D:\Sharecode\Computer\ElectroShop\obj\Debug\ElectroShop.pdb
+D:\Sharecode\Computer\ElectroShop\obj\Debug\ElectroShop.csprojAssemblyReference.cache
+D:\Sharecode\Computer\ElectroShop\obj\Debug\ElectroShop.Migrations.InitialCreate.resources
+D:\Sharecode\Computer\ElectroShop\obj\Debug\ElectroShop.csproj.GenerateResource.cache
+D:\Sharecode\Computer\ElectroShop\obj\Debug\ElectroShop.Migrations.one.resources
+D:\Sharecode\New folder\Computer\ElectroShop\bin\ElectroShop.dll.config
+D:\Sharecode\New folder\Computer\ElectroShop\bin\ElectroShop.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\ElectroShop.pdb
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\csc.exe
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\csc.exe.config
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\csc.rsp
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\csi.exe
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\csi.exe.config
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\csi.rsp
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\System.AppContext.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\System.Collections.Immutable.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\System.Console.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\System.Globalization.Calendars.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\System.IO.Compression.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\System.IO.FileSystem.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\System.Net.Http.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\System.Net.Sockets.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\System.Reflection.Metadata.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\System.ValueTuple.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\System.Xml.XPath.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\vbc.exe
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\vbc.exe.config
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\vbc.rsp
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\VBCSCompiler.exe
+D:\Sharecode\New folder\Computer\ElectroShop\bin\roslyn\VBCSCompiler.exe.config
+D:\Sharecode\New folder\Computer\ElectroShop\bin\EntityFramework.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\EntityFramework.SqlServer.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\Microsoft.Web.Infrastructure.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\PagedList.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\PagedList.Mvc.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\System.Web.Helpers.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\System.Web.Mvc.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\System.Web.Razor.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\System.Web.Webpages.Deployment.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\System.Web.Webpages.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\System.Web.Webpages.Razor.dll
+D:\Sharecode\New folder\Computer\ElectroShop\bin\EntityFramework.xml
+D:\Sharecode\New folder\Computer\ElectroShop\bin\EntityFramework.SqlServer.xml
+D:\Sharecode\New folder\Computer\ElectroShop\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Sharecode\New folder\Computer\ElectroShop\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Sharecode\New folder\Computer\ElectroShop\bin\PagedList.xml
+D:\Sharecode\New folder\Computer\ElectroShop\bin\PagedList.Mvc.xml
+D:\Sharecode\New folder\Computer\ElectroShop\bin\System.Web.Razor.xml
+D:\Sharecode\New folder\Computer\ElectroShop\bin\System.Web.Webpages.xml
+D:\Sharecode\New folder\Computer\ElectroShop\bin\System.Web.Webpages.Deployment.xml
+D:\Sharecode\New folder\Computer\ElectroShop\bin\System.Web.Webpages.Razor.xml
+D:\Sharecode\New folder\Computer\ElectroShop\bin\System.Web.Helpers.xml
+D:\Sharecode\New folder\Computer\ElectroShop\bin\System.Web.Mvc.xml
+D:\Sharecode\New folder\Computer\ElectroShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Sharecode\New folder\Computer\ElectroShop\obj\Debug\ElectroShop.csproj.CoreCompileInputs.cache
+D:\Sharecode\New folder\Computer\ElectroShop\obj\Debug\ElectroShop.csproj.CopyComplete
+D:\Sharecode\New folder\Computer\ElectroShop\obj\Debug\ElectroShop.dll
+D:\Sharecode\New folder\Computer\ElectroShop\obj\Debug\ElectroShop.pdb
+D:\Sharecode\New folder\Computer\ElectroShop\obj\Debug\ElectroShop.csprojAssemblyReference.cache
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\ElectroShop.dll.config
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\ElectroShop.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\ElectroShop.pdb
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\csc.exe
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\csc.exe.config
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\csc.rsp
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\csi.exe
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\csi.exe.config
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\csi.rsp
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\Microsoft.Managed.Core.targets
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\System.AppContext.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\System.Collections.Immutable.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\System.Console.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\System.Globalization.Calendars.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\System.IO.Compression.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\System.IO.FileSystem.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\System.Net.Http.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\System.Net.Sockets.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\System.Reflection.Metadata.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\System.ValueTuple.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\System.Xml.XmlDocument.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\System.Xml.XPath.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\vbc.exe
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\vbc.exe.config
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\vbc.rsp
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\VBCSCompiler.exe
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\roslyn\VBCSCompiler.exe.config
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\EntityFramework.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\EntityFramework.SqlServer.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\Microsoft.AspNet.Identity.Core.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\Microsoft.Web.Infrastructure.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\PagedList.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\PagedList.Mvc.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\System.Web.Helpers.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\System.Web.Mvc.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\System.Web.Razor.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\System.Web.Webpages.Deployment.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\System.Web.Webpages.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\System.Web.Webpages.Razor.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\EntityFramework.xml
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\EntityFramework.SqlServer.xml
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\Microsoft.AspNet.Identity.Core.xml
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\PagedList.xml
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\PagedList.Mvc.xml
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\System.Web.Razor.xml
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\System.Web.Webpages.xml
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\System.Web.Webpages.Deployment.xml
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\System.Web.Webpages.Razor.xml
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\System.Web.Helpers.xml
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\System.Web.Mvc.xml
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\obj\Debug\ElectroShop.csproj.CoreCompileInputs.cache
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\obj\Debug\ElectroShop.csproj.CopyComplete
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\obj\Debug\ElectroShop.dll
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\obj\Debug\ElectroShop.pdb
+D:\THE STUDYING FILES\PROGRAMING\ANTON\Projects\Computer\Computer\ElectroShop\obj\Debug\ElectroShop.csprojAssemblyReference.cache
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\ElectroShop.dll.config
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\ElectroShop.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\ElectroShop.pdb
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\csc.exe
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\csc.exe.config
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\csc.rsp
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\csi.exe
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\csi.exe.config
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\csi.rsp
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\Microsoft.Managed.Core.targets
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\System.AppContext.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\System.Collections.Immutable.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\System.Console.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\System.Globalization.Calendars.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\System.IO.Compression.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\System.IO.FileSystem.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\System.Net.Http.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\System.Net.Sockets.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\System.Reflection.Metadata.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\System.ValueTuple.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\System.Xml.XmlDocument.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\System.Xml.XPath.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\vbc.exe
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\vbc.exe.config
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\vbc.rsp
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\VBCSCompiler.exe
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\roslyn\VBCSCompiler.exe.config
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\EntityFramework.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\EntityFramework.SqlServer.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\Microsoft.AspNet.Identity.Core.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\Microsoft.Web.Infrastructure.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\PagedList.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\PagedList.Mvc.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\System.Web.Helpers.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\System.Web.Mvc.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\System.Web.Razor.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\System.Web.Webpages.Deployment.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\System.Web.Webpages.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\System.Web.Webpages.Razor.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\EntityFramework.xml
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\EntityFramework.SqlServer.xml
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\Microsoft.AspNet.Identity.Core.xml
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\PagedList.xml
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\PagedList.Mvc.xml
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\System.Web.Razor.xml
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\System.Web.Webpages.xml
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\System.Web.Webpages.Deployment.xml
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\System.Web.Webpages.Razor.xml
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\System.Web.Helpers.xml
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\System.Web.Mvc.xml
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\obj\Debug\ElectroShop.csprojAssemblyReference.cache
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\obj\Debug\ElectroShop.csproj.CoreCompileInputs.cache
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\obj\Debug\ElectroShop.csproj.CopyComplete
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\obj\Debug\ElectroShop.dll
+D:\LAMWORKSPACE\UTC\ASPNET\BaiTapLon\webplant2021\Computer\ElectroShop\obj\Debug\ElectroShop.pdb

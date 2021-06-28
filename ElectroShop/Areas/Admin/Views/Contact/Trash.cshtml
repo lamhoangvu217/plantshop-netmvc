@@ -1,0 +1,97 @@
+﻿@model IEnumerable<ElectroShop.Models.MContact>
+@{
+    ViewBag.Title = "Trash";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+@Html.Partial("_MessageAlert")
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Liên hệ</h2>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="~/admin">Dashboard</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a>Contact</a>
+            </li>
+            <li class="breadcrumb-item active">
+                <strong>Index</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+        <br />
+        <a class="btn btn-success " href="@Url.Action("Index","Contact")"><i class="fa fa-reply"></i>&nbsp;&nbsp;<span class="bold">Trở về</span></a>
+
+
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox ">
+
+                <div class="ibox-content">
+
+                    <table class="footable table table-stripped toggle-arrow-tiny">
+                        <thead>
+                            <tr>
+                                <th data-toggle="true">ID</th>
+                                <th>Tiêu đề </th>
+                                <th data-hide="all">Email</th>
+                                <th data-hide="all">Điện thoại</th>
+                                <th>Trạng thái</th>
+                                <th>Công cụ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @{var stt = 1;}
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td class="">@Html.DisplayFor(modelItem => item.Id)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.Title)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.Email)</td>
+                                    <td>0@(Html.DisplayFor(modelItem => item.Phone))</td>
+
+                                    <td class="">
+
+                                        @if (item.Flag == 1)
+                                        {
+                                            <span class="badge badge-secondary">
+                                                Đã trả lời
+                                            </span> }
+                                        else
+                                        {
+                                            <span class="badge badge-success">
+                                                Chưa trả lời
+                                            </span>}
+
+                                    </td>
+                                    <td class="">
+                                        <button type="button" class="btn btn-info btn-sm" data-toggle="tooltip" data-placement="top" title="Khôi phục">
+                                            <a href="@Url.Action("ReTrash", "Contact", new { id = item.Id })" class="text-white"><i class="fa fa-undo"></i></a>
+                                        </button>
+                                        <button type="button" class="btn btn-secondary btn-sm" data-toggle="tooltip" data-placement="top" title="Xóa vĩnh viễn">
+                                            <a href="@Url.Action("Delete", "Contact", new { id = item.Id })" class="text-white"><i class="fa fa-trash"></i></a>
+                                        </button>
+                                    </td>
+                                </tr>
+                                stt++;
+                            }
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="5">
+                                    <ul class="pagination float-right"></ul>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

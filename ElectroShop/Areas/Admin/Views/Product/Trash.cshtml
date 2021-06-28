@@ -1,0 +1,88 @@
+﻿@model IEnumerable<ElectroShop.ProductCategory>
+@{
+    ViewBag.Title = "Trash";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+@Html.Partial("_MessageAlert")
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-9">
+        <h2>Sản phẩm</h2>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="~/admin">Dashboard</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a>Product</a>
+            </li>
+            <li class="breadcrumb-item active">
+                <strong>Trash</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-3">
+        <br />
+        
+        <a class="btn btn-info " href="@Url.Action("Index","Product")"><i class="fa fa-mail-reply"></i>&nbsp;&nbsp;<span class="bold">Quay về</span></a>
+
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox ">
+
+                <div class="ibox-content">
+
+                    <table class="footable table table-stripped toggle-arrow-tiny">
+                        <thead>
+                            <tr>
+                                <th data-toggle="true">ID</th>
+                                <th>Ảnh</th>
+                                <th>Tên sản phẩm</th>
+                               
+                                <th data-hide="all">Ngày tạo</th>
+                                <th data-hide="all">Giá khuyến mãi</th>
+                                <th> Giá</th>
+                                <th>Chức năng</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var row in Model)
+                            {
+                                <tr>
+                                    <td>@row.ProductId</td>
+                                    <td><img src="~/Public/library/product/@row.ProductImg" width="80px;" /></td>
+                                    <td><a href="@Url.Action("Details","Product", new {Id = row.ProductId })" />@row.ProductName</td>
+                                    
+                                    <!--None show hide-->
+                                    <td>@String.Format("{0:dd-MM-yyyy -  hh:mm:ss}", row.ProductCreated_At)</td>
+
+                                    <td><span class="pie"> @String.Format("{0:0,0₫}", row.ProductPriceSale) </span></td>
+                                    <td>@String.Format("{0:0,0₫}", row.ProductPrice)</td>
+
+                                    <td>
+                                        <button type="button" class="btn btn-white btn-sm" data-toggle="tooltip" data-placement="top" title="Chỉnh sửa">
+                                            <a href="@Url.Action("Undo", "Product", new { id = row.ProductId })" class="text-success"><i class="fa fa-refresh"></i></a>
+                                        </button>
+                                        <button type="button" class="btn btn-white btn-sm" data-toggle="tooltip" data-placement="top" title="Xóa">
+                                            <a href="@Url.Action("Delete", "Product", new { id = row.ProductId })" class="text-danger"><i class="fa fa-trash"></i></a>
+                                        </button>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="5">
+                                    <ul class="pagination float-right"></ul>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

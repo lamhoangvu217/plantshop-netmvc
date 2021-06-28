@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="~/Public/admins/img/favicon-16x16.png">
+    <title>Quản trị hệ thống: @ViewBag.Title</title>
+    <link href="~/Public/admin/status/css/style.css" rel="stylesheet" />
+    <link href="~/Public/admins/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Public/admin/status/css/sweetalert2.min.css" rel="stylesheet" />
+    <link href="~/Public/admin/status/css/toastr.min.css" rel="stylesheet" />
+
+    <link href="~/Public/admins/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="~/Public/admins/css/animate.css" rel="stylesheet" />
+    <link href="~/Public/admins/style.css" rel="stylesheet" />
+    <!-- FooTable -->
+    <link href="~/Public/admins/css/plugins/footable/footable.core.css" rel="stylesheet">
+    <script type="text/javascript" src="~/Public/admin/status/ckeditor/ckeditor.js"></script>
+
+</head>
+
+<body>
+    <style>
+        .navbar-top-links .dropdown-alerts {
+            width: 230px;
+        }
+        
+    </style>
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+
+                            <a href="#" style="text-align: center;">
+                                <h1 class="block m-t-xs font-bold">@Session["Admin_Name"]</h1>
+                                <span class="text-muted text-xs block">Quản trị viên</span>
+                            </a>
+
+                        </div>
+                        <div class="logo-element">
+                            ADMIN
+                        </div>
+                    </li>
+
+                    <li class="active">
+                        <a href="@Url.Action("Index","Dashboard")"><i class="fa fa-tachometer"></i> <span class="nav-label">Bảng điều khiển</span></a>
+
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="fa fa-bars"></i> <span class="nav-label">Sản phẩm</span> <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="@Url.Action("Index","Category")" class="">Danh mục sản phẩm</a> </li>
+                            <li>
+                                <a href="@Url.Action("Index","Product")">Sản phẩm</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-bars"></i> <span class="nav-label">Bài viết</span> <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="@Url.Action("Index","Topic")">Danh mục bài viết</a>
+                            </li>
+                            <li>
+                                <a href="@Url.Action("Index","Post")">Bài viết</a>
+                            </li>
+                            <li>
+                                <a href="@Url.Action("Index","Page")">Trang đơn</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <a href="@Url.Action("Index","Order")"><i class="fa fa-shopping-bag"></i> <span>Đơn hàng</span><span class="fa arrow"></span> </a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="@Url.Action("Index","Order")">Danh sách</a>
+                            </li>
+                            <li>
+                                <a href="@Url.Action("Trash","Order")">Đã hủy</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <a href="@Url.Action("Index","Contact")"><i class="fa fa-id-card"></i> <span>Liên hệ</span><span class="fa arrow"></span> </a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="@Url.Action("Index","Contact")">Danh sách</a>
+                            </li>
+                            <li>
+                                <a href="@Url.Action("Trash","Contact")">Thùng rác</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="#"><i class="fa fa-bars"></i> <span class="nav-label">Hệ thống</span> <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="@Url.Action("Index","User")">Quản trị viên</a>
+                            </li>
+                            <li>
+                                <a href="@Url.Action("Create","User")">Thêm quản trị viên</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="gray-bg dashbard-1">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                        <form role="search" class="navbar-form-custom" action="#">
+                            <div class="form-group">
+                                <input type="text" placeholder="Nhập để tìm kiếm" class="form-control" name="top-search" id="top-search">
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li>
+                            <span class="m-r-sm text-muted welcome-message">Chào mừng bạn đến với Quản trị Shop.</span>
+                        </li>
+                        @Html.Action("Actions", "Modules")
+
+
+                        <li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                                <i class="fa fa-user"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-alerts">
+                                <li>
+                                    <a href="#" class="dropdown-item">
+                                        <div>
+                                            <i class="fa fa-user"></i> Xin chào, @Session["Admin_Name"]
+
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li>
+                                    <a href="#" class="dropdown-item">
+                                        <div>
+                                            <i class="fa fa-user"></i> Tài khoản của tôi
+
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="~/Admin/Logout" class="dropdown-item">
+                                        <div>
+                                            <i class="fa fa-sign-out"></i> Đăng xuất
+
+                                        </div>
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+            <!-- renderbody -->
+            @RenderBody()
+            <!-- renderbody -->
+
+            <div class="footer">
+                <div class="float-right">
+                    <strong>Version</strong> 3.0.4
+                </div>
+                <div>
+                    <strong>Copyright</strong> &copy; Administrators
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <script src="~/Public/admin/js/plugins/fullcalendar/moment.min.js"></script>
+
+    <!-- Mainly scripts -->
+    
+    <script src="~/Public/admin/js/jquery-3.1.1.min.js"></script>
+    <script src="~/Public/admin/js/popper.min.js"></script>
+    <script src="~/Public/admin/js/bootstrap.js"></script>
+    <script src="~/Public/admin/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="~/Public/admin/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="~/Public/admin/status/js/karma.laclac.min.js"></script>
+    <script src="~/Public/admin/status/js/sweetalert2.min.js"></script>
+    <script src="~/Public/admin/status/js/toastr.min.js"></script>
+
+
+    <!-- Custom and plugin javascript -->
+    <script src="~/Public/admin/js/inspinia.js"></script>
+    <script src="~/Public/admin/js/plugins/pace/pace.min.js"></script>
+
+    <!-- FooTable -->
+    <script src="~/Public/admin/js/plugins/footable/footable.all.min.js"></script>
+    <!-- jQuery UI -->
+    <script src="~/Public/admin/js/plugins/jquery-ui/jquery-ui.min.js"></script>
+    
+
+    <script>
+        $(document).ready(function () {
+
+            $('.footable').footable();
+            $('.footable2').footable();
+
+        });
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,61 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    @*@Html.Action("LinkHeader","Module")*@
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>@ViewBag.Title</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="~/Public/user/img/favicon.png">
+    <link rel="stylesheet" href="~/Public/user/css/animate.css">
+    <link rel="stylesheet" href="~/Public/user/css/jquery.fancybox.css">
+    <link rel="stylesheet" href="~/Public/user/css/jquery.bxslider.css">
+    <link rel="stylesheet" href="~/Public/user/css/meanmenu.min.css">
+    <link rel="stylesheet" href="~/Public/user/css/jquery-ui-slider.css">
+    <link rel="stylesheet" href="~/Public/user/css/nivo-slider.css">
+    <link rel="stylesheet" href="~/Public/user/css/owl.carousel.css">
+    <link rel="stylesheet" href="~/Public/user/css/owl.theme.css">
+    <link rel="stylesheet" href="~/Public/user/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Public/user/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/Public/user/css/normalize.css">
+    <link rel="stylesheet" href="~/Public/user/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/Public/user/css/style.css">
+    <link rel="stylesheet" href="~/Public/user/css/responsive.css">
+    <link rel="stylesheet" href="~/Public/user/css/ie.css">
+    <script src="~/Public/user/js/vendor/modernizr-2.6.2.min.js"></script>
+    <link href="~/Public/user/css/alert.css" rel="stylesheet" />
+
+    <script src="~/Public/js/sweetalert2@9.js"></script>
+    <script src="~/Public/user/js/vendor/jquery-1.11.3.min.js"></script>
+</head>
+<body class="index-2">
+    @Html.Action("Header", "Module")
+    @Html.Action("Cart", "Module")
+    @RenderBody()
+    @*@Html.Action("Brand", "Module")*@
+    @Html.Action("CompanyFacality", "Module")
+    @Html.Action("Footer", "Module")
+    @Html.Action("Copyright", "Module")
+
+    @*@Html.Action("LinkFooter", "Module")*@
+    <script src="~/Public/user/js/jquery.fancybox.js"></script>
+    <script src="~/Public/user/js/jquery.bxslider.min.js"></script>
+    <script src="~/Public/user/js/jquery.meanmenu.js"></script>
+    <script src="~/Public/user/js/owl.carousel.min.js"></script>
+    <script src="~/Public/user/js/jquery.nivo.slider.js"></script>
+    <script src="~/Public/user/js/jqueryui.js"></script>
+    <script src="~/Public/user/js/bootstrap.min.js"></script>
+    <script src="~/Public/user/js/wow.js"></script>
+    <script src="~/Public/js/target.min.js"></script>
+
+    <script src="~/Public/js/popper.min.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
+    @*<script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=601bab9dd2f8290011987836&product=sticky-share-buttons" async="async"></script>*@
+    <script src="~/Public/user/js/main.js"></script>
+</body>
+</html>

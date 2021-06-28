@@ -1,0 +1,14 @@
+﻿@model IEnumerable<ElectroShop.Models.MCategory>
+<div class="categorys-product-search">
+    @using (Html.BeginForm("Search", "Site", FormMethod.Get, new { @class = "search-form-cat" }))
+    {
+            <div class="search-product">
+                
+                <input type="text" class="form-control search-form" placeholder="Nhập tên sản phẩm..." name="key" value="@(Session["keywords"] ?? "")">
+                <button class="search-button" value="Search" name="s" type="submit">
+                    Tìm kiếm
+                    @*<i class="fa fa-search"></i>*@
+                </button>
+            </div>
+        }
+</div>

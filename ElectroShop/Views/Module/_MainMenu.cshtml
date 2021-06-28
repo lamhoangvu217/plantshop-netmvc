@@ -1,0 +1,23 @@
+﻿@model IEnumerable<ElectroShop.Models.MMenu>
+
+<div class="col-lg-10 col-md-9 col-sm-12 col-xs-12 no-padding-right menuarea">
+    <div class="mainmenu">
+        <nav>
+            <ul class="list-inline mega-menu">
+                <li class="active">
+                    <a href="~/">Trang Chủ</a>
+                    <!-- DROPDOWN MENU START -->
+                    <!-- DROPDOWN MENU END -->
+                </li>
+                @Html.Action("MainMenuWithCategory", "Module")
+
+                @foreach (var item in Model)
+                {
+                    <li class="">
+                        <a href="~/@item.Link">@item.Name</a>
+                    </li>
+                }
+            </ul>
+        </nav>
+    </div>
+</div>

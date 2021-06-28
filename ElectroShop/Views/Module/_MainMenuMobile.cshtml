@@ -1,0 +1,31 @@
+﻿@model IEnumerable<ElectroShop.Models.MMenu>
+<style>
+    .mean-container .mean-bar {
+        position:unset ;
+    }
+</style>   
+ <div class="row">
+        <div class="col-sm-12 mobile-menu-area">
+            <div class="mobile-menu hidden-md hidden-lg" id="mob-menu">
+                <span class="mobile-menu-title">MENU</span>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="~/">Trang Chủ</a>
+                        </li>
+                        @foreach (var item in Model)
+                        {
+                            <li>
+                                <a href="~/@item.Link">@item.Name</a>
+                                @*<ul>
+
+                    <li><a href="index.html">Home variation 1</a></li>
+
+                </ul>*@
+                            </li>
+                        }
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>

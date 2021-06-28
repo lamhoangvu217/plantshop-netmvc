@@ -1,0 +1,12 @@
+﻿@model IEnumerable<ElectroShop.Models.MCategory>
+
+@foreach (var row in Model)
+{
+    <li>
+        <a href="~/@row.Slug">@row.Name<span></span></a>
+    </li>
+    <br />
+}
+<li>
+    <a href="~/san-pham">Tất cả sản phẩm<span></span></a>
+</li>

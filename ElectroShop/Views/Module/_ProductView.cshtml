@@ -1,0 +1,63 @@
+﻿<section class="main-content-section">
+    <div class="container">
+        <div class="row category-child">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+
+                <div class="left-category-menu">
+                    <div class="left-product-cat">
+                        <div class="category-heading">
+                            <h2>Cây cảnh phong thủy</h2>
+                        </div>
+                        <div class="category-menu-list">
+                            @Html.Action("Category", "Module")
+                        </div>
+                    </div>
+                </div>
+
+                <div class="left-category-menu">
+                    <div class="left-product-cat">
+                        <div class="category-heading">
+                            <h2>Cây cảnh</h2>
+                        </div>
+                        <div class="category-menu-list">
+                            @Html.Action("CategoryChild", "Module", new { id = 1 })
+                        </div>
+                    </div>
+                </div>
+
+                <div class="left-category-menu">
+                    <div class="left-product-cat">
+                        <div class="category-heading">
+                            <h2>Chậu cảnh</h2>
+                        </div>
+                        <div class="category-menu-list">
+                            @Html.Action("CategoryChild", "Module", new { id = 2 })
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news">
+                    <h3 class="news-heading">Tin tức nổi bật</h3>
+
+                    <div class="news-listing">
+                        @Html.Action("LatestNewListing", "Module")
+                    </div>
+                   
+                </div>
+
+
+            </div>
+            <!-- LEFT-SIDEBAR START -->
+            <div class="col-lg-9 col-xs-12">
+                <!-- SIDEBAR-LEFT-ADD START -->
+                <!-- SIDEBAR-LEFT-ADD END -->
+                <!-- LEFT SIDEBAR-BEST-SELLER START -->
+                @Html.Action("Sale", "Module")
+                <!-- LEFT SIDEBAR-BEST-SELLER END -->
+
+                @Html.Action("ProductNew", "Module")
+            </div>
+        </div>
+     
+    </div>
+</section>
