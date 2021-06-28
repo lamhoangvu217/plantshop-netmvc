@@ -16,7 +16,7 @@
 * sort products by category
 * event handling (like popup notification) using AJAX/JQuery/Javascript
 
-## some screenshot 
+## Demo
 ![Screenshot1](https://i.ibb.co/p3Yybcw/anh1.png)
 ![Screenshot2](https://i.ibb.co/BC52FyH/anh2.png)
 ![Screenshot3](https://i.ibb.co/mv2fgdp/anh3.png)
