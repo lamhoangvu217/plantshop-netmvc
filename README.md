@@ -15,4 +15,4 @@
 * event handling (like popup notification) using AJAX/JQuery/Javascript
 
 ## some screenshot 
-![Screenshot1](https://ibb.co/brcJQTm)
+![Screenshot1](https://i.ibb.co/p3Yybcw/anh1.png)
